@@ -1,7 +1,7 @@
 # Infrastructure Réseau d'Entreprise Sécurisée avec Interconnexion WAN (Cisco Packet Tracer)
 
 <p align="center">
-  <img src="./screenshot_topology.png" alt="Topologie Réseau Complète" width="95%">
+  <img src="img/Topology.png" alt="Topologie Réseau Complète" width="95%">
 </p>
 
 ## 📌 Présentation du Projet
