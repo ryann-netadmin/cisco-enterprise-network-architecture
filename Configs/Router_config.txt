@@ -1,0 +1,107 @@
+Building configuration...
+
+Current configuration : 1329 bytes
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname R1
+!
+!
+!
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin secret 5 $1$mERr$n/qfqwKgnxc9y8vk8hPce1
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip domain-name domain.com
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ description Link to server FAI
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ description link to switch L3
+ ip address 192.168.99.17 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ description link to R1
+ ip address 203.0.113.2 255.255.255.252
+!
+interface Serial0/1/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 192.168.10.0 255.255.255.192 192.168.99.18 
+ip route 192.168.10.64 255.255.255.224 192.168.99.18 
+ip route 192.168.20.0 255.255.255.224 192.168.99.18 
+ip route 0.0.0.0 0.0.0.0 203.0.113.1 
+!
+ip flow-export version 9
+!
+!
+!
+banner motd ^C Access only to Authorized personnel !!!^C
+!
+!
+!
+!
+line con 0
+ password 7 0822455D0A16
+ login
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end
+
