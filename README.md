@@ -28,7 +28,7 @@ Le réseau de l'entreprise est segmenté en plusieurs zones logiques afin d'assu
 ### 2. Routage & Services Réseau (Couche 3)
 * **Routage Inter-VLAN :** Configuré directement sur le switch `Central-L3` via des interfaces virtuelles de commutateur (SVI).
 * **Routage Statique :** * Configuration d'une route par défaut (`0.0.0.0/0`) sur le réseau d'entreprise pointant vers le routeur de bordure (`R1`), puis vers le `Router_FAI`.
-    * Configuration de routes statiques de retour sur le routeur FAI pour joindre les sous-réseaux internes de l'entreprise.
+  * Configuration de routes statiques de retour sur le routeur FAI pour joindre les sous-réseaux internes de l'entreprise.
 * **DHCP Centralisé :** Le switch L3 distribue automatiquement les adresses IP aux clients des VLANs 10, 11 et 20, avec une exclusion stricte des premières adresses réservées aux passerelles.
 
 ### 3. Sécurité de l'Infrastructure (Hardening)
@@ -44,3 +44,19 @@ Le réseau de l'entreprise est segmenté en plusieurs zones logiques afin d'assu
 
 ### 1. Connectivité de bout en bout (Ping)
 Voici la validation des communications montrant qu'un PC du réseau interne de l'entreprise (ex: VLAN 10) arrive à joindre avec succès le serveur du FAI (`8.8.8.2`) :
+
+<img src="./images/screenshot_ping_test.png" alt="Test de validation Ping" width="70%">
+
+### 2. Sécurisation des accès à distance (SSH)
+Démonstration de la connexion à l'un des commutateurs ou routeurs via SSHv2 depuis le VLAN de management 99, prouvant que Telnet est rejeté et que l'authentification locale fonctionne :
+
+<img src="./images/screenshot_ssh_access.png" alt="Accès SSH Équipement" width="70%">
+
+### 3. Attribution des adresses IP par le DHCP
+Preuve du bon fonctionnement du serveur DHCP configuré sur le commutateur de niveau 3 (Central-L3) sur les machines clientes :
+
+<img src="./images/screenshot_dhcp_success.png" alt="Attribution IP DHCP" width="70%">
+
+---
+
+## 📊
