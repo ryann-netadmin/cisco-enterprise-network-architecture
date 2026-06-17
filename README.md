@@ -69,7 +69,7 @@ Démonstration de la connexion à l'un des commutateurs ou routeurs via SSHv2 de
 Preuve de la bonne association des ordinateurs portables (Laptops) aux points d'accès correspondants avec chiffrement AES, et obtention d'une IP via DHCP dans leurs VLANs respectifs :
 
 <p align="center">
-  <img src="img/validation_wifi&dhcp.png" alt="Validation Wi-Fi et DHCP" width="75%">
+  <img src="img/Validation_wifi&dhcp.png" alt="Validation Wi-Fi et DHCP" width="75%">
 </p>
 
 ---
