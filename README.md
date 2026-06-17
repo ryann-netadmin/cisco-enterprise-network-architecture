@@ -91,5 +91,5 @@ Preuve de la bonne association des ordinateurs portables (Laptops) aux points d'
 
 ## 📁 Structure du Dépôt
 * 📁 `configs/` : Contient les sauvegardes textuelles des fichiers de configuration (`running-config`) de chaque équipement.
-* 📁 `images/` : Contient l'ensemble des captures d'écran des tests et validations réseau.
-* 📄 `Infrastructure_Entreprise.pkt` : Le fichier de simulation Cisco Packet Tracer source.
+* 📁 `img/` : Contient l'ensemble des captures d'écran des tests et validations réseau.
+* 📄 `cisco-entreprise-network-architecture.pkt` : Le fichier de simulation Cisco Packet Tracer source.
