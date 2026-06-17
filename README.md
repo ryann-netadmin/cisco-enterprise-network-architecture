@@ -49,17 +49,23 @@ Le réseau de l'entreprise est segmenté en plusieurs zones logiques afin d'assu
 Validation des communications montrant qu'un PC du réseau interne de l'entreprise (ex: VLAN 10) arrive à joindre avec succès le serveur du FAI (`8.8.8.2`) :
 
 <p align="center">
-  <img src="./images/screenshot_ping_test.png" alt="Test de validation Ping" width="75%">
+  <img src="img/ping.png" alt="Test de validation Ping" width="75%">
+</p>
+### 2. Traceroute
+Voir les sauts pour atteindre le serveur FAI (ex: VLAN 10) arrive à joindre avec succès le serveur du FAI (`8.8.8.2`) :
+
+<p align="center">
+  <img src="img/traceroute.png" alt="Test traceroute" width="75%">
 </p>
 
-### 2. Sécurisation des accès à distance (SSH)
+### 3. Sécurisation des accès à distance (SSH)
 Démonstration de la connexion à l'un des commutateurs ou routeurs via SSHv2 depuis le VLAN de management 99, prouvant que Telnet est rejeté et que l'authentification locale fonctionne :
 
 <p align="center">
-  <img src="./images/screenshot_ssh_access.png" alt="Accès SSH Équipement" width="75%">
+  <img src="img/connection_ssh.png" alt="Accès SSH Équipement" width="75%">
 </p>
 
-### 3. Association et Connectivité Wi-Fi (Staff & Guest)
+### 4. Association et Connectivité Wi-Fi (Staff & Guest)
 Preuve de la bonne association des ordinateurs portables (Laptops) aux points d'accès correspondants avec chiffrement AES, et obtention d'une IP via DHCP dans leurs VLANs respectifs :
 
 <p align="center">
