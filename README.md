@@ -52,7 +52,7 @@ Validation des communications montrant qu'un PC du réseau interne de l'entrepri
   <img src="img/ping.png" alt="Test de validation Ping" width="75%">
 </p>
 ### 2. Traceroute
-Voir les sauts pour atteindre le serveur FAI (ex: VLAN 10) arrive à joindre avec succès le serveur du FAI (`8.8.8.2`) :
+Voir les sauts de route pour atteindre le serveur FAI (ex: VLAN 10) arrive à joindre avec succès le serveur du FAI (`8.8.8.2`) :
 
 <p align="center">
   <img src="img/traceroute.png" alt="Test traceroute" width="75%">
